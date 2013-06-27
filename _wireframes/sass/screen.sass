@@ -1,0 +1,70 @@
+$larn: rgb(219, 226, 75)
+$maxwidth: 1000px
+$padding: 10px 2.5%
+$serif: 'Roboto Slab', Georgia 
+$sans: 'Source Sans Pro', Helvetica, sans-serif
+$black: rgba(90,90,90,1)
+$offwhite: rgba(250,250,250,1)
+$text: $black
+
+@import "compass/reset"
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Roboto+Slab:700,400)
+
+body
+  background: $offwhite
+  font-family: $sans 
+  text-shadow: 0 1px 0 white
+
+header
+  height: 300px
+  background: $larn
+  box-shadow: 0 4px 0 darken($larn, 20%)
+  padding-top: 20px
+  
+  h1
+    text-shadow: 0 2px 0 darken($larn, 20%)
+article
+  max-width: $maxwidth
+  margin: 0 auto
+  margin-bottom: 20px
+  margin-top: 20px
+
+section
+  display: inline-block
+  margin-bottom: 10px
+  margin-top: 10px
+  padding-right: 2.5%
+  &:last-of-type
+    padding-right: none
+
+h1
+  font-weight: bold
+  font-size: 2em
+  line-height: 2.2em
+  margin-bottom: 2em
+  text-align: center
+  color: $black
+  text-shadow: 0 -1px 0 white
+h2
+  font-weight: bold
+  font-family: $sans
+  font-size: 1.4em
+  line-height: 1.4em
+  color: darken($larn, 10%)
+p
+  font-size: 1.1em
+  line-height: 1.3em
+  color: $text
+.third
+  width: 30%
+.half
+  width: 45%
+.quarter
+  width: 20%
+  
+#larnjee
+  width: 400px
+  height: 200px
+  display: block
+  background: darken($larn, 10%)
+  margin: 0 auto
