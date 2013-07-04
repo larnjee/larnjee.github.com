@@ -1,0 +1,189 @@
+$larn: rgb(219, 226, 75)
+$maxwidth: 1200px
+$padding: 10px 2.5%
+$serif: 'Roboto Slab', Helvetica Neue, Helvetica, sans-serif
+$sans: 'Source Sans Pro', Helvetica Neue, Helvetica, sans-serif
+$black: rgba(90,90,90,1)
+$offwhite: rgba(240,240,240,1)
+$text: lighten($black, 20%)
+$photography: desaturate(adjust-hue($larn, 90deg),30%)
+$design: desaturate(adjust-hue($larn, 180deg), 30%)
+$social-media: desaturate(adjust-hue($larn, 270deg),30%)
+
+@import "compass/reset"
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Roboto+Slab:100+700)
+
+body
+  background: $offwhite
+  font-family: $sans 
+  text-shadow: 0 1px 0 white
+
+header
+  height: 300px
+  background: $larn
+  padding-top: 20px
+  margin-bottom: 20px
+  &:after
+    height: 40px
+    content: ""
+    width: 100%
+    display: block
+    position: relative
+    top: -65px
+    background: url('circle.svg') repeat-x 
+    background-size: 40px
+  h1
+    text-shadow: 0 2px 0 darken($larn, 20%)
+
+article
+  //max-width: $maxwidth
+  margin: 0 auto
+  padding-top: 100px
+  padding-bottom: 100px
+  padding-left: 2.5%
+  padding-right: 2.5%
+
+section
+  display: inline-block
+  margin-bottom: 10px
+  margin-top: 10px
+  padding-right: 2.5%
+  vertical-align: text-top
+
+  &:last-of-type
+    padding-right: none
+
+.storify-container
+  background: lighten($social-media, 10%)
+  padding: 10px
+  border-radius: 10px
+  border: 1px solid lighten($social-media, 20%)
+  box-shadow: 0 -1 0 grey
+  @extend section
+  height: 300px
+  overflow: scroll
+
+
+.storify-collapser
+  position: relative
+  bottom: 0
+  width: 95%
+  margin: 0 auto
+  font-family: $sans
+  font-weight: bold
+  color: white
+  padding: 5px
+  font-size: 1.5em
+  background: $design
+  text-align: center
+
+figure
+  @extend section
+
+h1
+  font-weight: bold
+  font-family: $serif
+  font-size: 2em
+  line-height: 2.2em
+  margin-bottom: 2em
+  text-align: center
+  color: $black
+  text-shadow: 0 -1px 0 white
+h2
+  font-weight: bold
+  font-family: $sans
+  font-size: 2.5em
+  text-align: center
+  margin-top: 1em
+  margin-bottom: 1em
+  color: $offwhite
+h3
+  font-weight: bold
+  font-family: $sans
+  font-size: 1.6em
+  line-height: 1.4em
+  color: $larn
+  margin-top: 1em
+  text-align: center
+  margin-bottom: 1em
+  font-family: $serif
+
+h4
+  font-weight: bold
+  margin-top: .5em
+  margin-bottom: .5em
+  font-size: 1.2em
+  color: $offwhite
+p
+  font-size: 1.1em
+  line-height: 1.5em
+  color: $text
+ul
+  width: 100%
+li.case-icon
+  margin-bottom: 1em
+  font-weight: bold
+  font-size: 1.4em
+  color: $offwhite
+  display: inline-block
+  width: 47.5%
+  vertical-align: top
+  &:nth-of-type(even)
+    margin-left: 2.5%
+li.active-storify
+  color: $larn
+
+img
+  max-width: 100%
+img.skill-icon
+  opacity: .8
+  display: inline-block
+img.case-icon
+  background: white
+  display: inline-block
+  vertical-align: middle
+  margin-right: 4% 
+.third
+  width: 30%
+  max-width: .3 * $maxwidth
+.half
+  width: 47%
+.quarter
+  width: 22%
+  max-width: .4 * $maxwidth
+.storify-container
+  width: 60%
+.storify-menu
+  width: 30%
+.social-media
+  color: $social-media
+.design
+  color: $design
+.photography
+  color: $photography
+#larnjee
+  margin: 0 auto
+  text-align: center
+
+#design
+  background: $design
+
+#social-media
+  background: $social-media
+
+#photography
+  background: $black
+
+#contact
+  background: $larn
+
+.hidden
+  display: none
+
+.colored
+  p
+    color: $offwhite
+
+.section-icon
+  position: relative
+  top: -100px
