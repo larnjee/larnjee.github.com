@@ -41,7 +41,7 @@ article
   padding-top: 100px
   padding-bottom: 100px
   padding-left: 2.5%
-  padding-right: 2.5%
+  padding-right: 2.5
 
 section
   display: inline-block
@@ -53,6 +53,33 @@ section
   &:last-of-type
     padding-right: none
 
+#modal
+  position: fixed
+  z-index: 999
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  background: rgba(0,0,0,.8)
+  display: none
+
+  figure
+    text-align: center
+    margin: 0 auto
+    display: block
+  figcaption
+    h1
+      font-family: $sans
+      font-weight: bold
+      font-size: 1.3em
+      color: $offwhite
+      margin: 0 auto
+      margin-bottom: 1em
+    p
+      font-family: $sans
+      color: $offwhite
+      text-align: center
+
 .storify-container
   background: lighten($social-media, 10%)
   padding: 10px
@@ -61,8 +88,7 @@ section
   box-shadow: 0 -1 0 grey
   @extend section
   height: 300px
-  overflow: scroll
-
+  overflow-y: scroll
 
 .storify-collapser
   position: relative
