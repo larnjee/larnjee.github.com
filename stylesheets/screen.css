@@ -1,5 +1,70 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Roboto+Slab:300+700);
-/* line 15, ../sass/screen.sass */
+/* line 17, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, .storify-container, figure, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, .storify-container, figure, summary {
+  display: block;
+}
+
+/* line 16, ../sass/screen.sass */
 body {
   background: #f0f0f0;
   font-family: "Source Sans Pro", Helvetica Neue, Helvetica, sans-serif;
@@ -7,18 +72,18 @@ body {
   margin: 0 auto;
 }
 
-/* line 21, ../sass/screen.sass */
+/* line 22, ../sass/screen.sass */
 header {
   background: #dbe24b;
   padding-top: 40px;
   padding-bottom: 10px;
 }
-/* line 35, ../sass/screen.sass */
+/* line 36, ../sass/screen.sass */
 header h1 {
   text-shadow: 0 1px 0 #a5ab1c;
 }
 
-/* line 38, ../sass/screen.sass */
+/* line 39, ../sass/screen.sass */
 article {
   width: 1200px;
   margin: 0 auto;
@@ -28,7 +93,7 @@ article {
   padding-right: 2.5;
 }
 
-/* line 46, ../sass/screen.sass */
+/* line 47, ../sass/screen.sass */
 section, .storify-container, figure {
   display: inline-block;
   margin-bottom: 10px;
@@ -36,12 +101,12 @@ section, .storify-container, figure {
   padding-right: 2.5%;
   vertical-align: text-top;
 }
-/* line 53, ../sass/screen.sass */
+/* line 54, ../sass/screen.sass */
 section:last-of-type, .storify-container:last-of-type, figure:last-of-type {
   padding-right: none;
 }
 
-/* line 56, ../sass/screen.sass */
+/* line 57, ../sass/screen.sass */
 #modal {
   position: fixed;
   z-index: 999;
@@ -52,17 +117,17 @@ section:last-of-type, .storify-container:last-of-type, figure:last-of-type {
   background: rgba(0, 0, 0, 0.8);
   display: none;
 }
-/* line 66, ../sass/screen.sass */
+/* line 67, ../sass/screen.sass */
 #modal img {
   max-width: 500px;
 }
-/* line 69, ../sass/screen.sass */
+/* line 70, ../sass/screen.sass */
 #modal figure {
   text-align: center;
   margin: 0 auto;
   display: block;
 }
-/* line 75, ../sass/screen.sass */
+/* line 76, ../sass/screen.sass */
 #modal figcaption h1 {
   font-family: "Source Sans Pro", Helvetica Neue, Helvetica, sans-serif;
   font-weight: bold;
@@ -72,7 +137,7 @@ section:last-of-type, .storify-container:last-of-type, figure:last-of-type {
   margin-bottom: 1em;
   text-shadow: none;
 }
-/* line 84, ../sass/screen.sass */
+/* line 85, ../sass/screen.sass */
 #modal figcaption p {
   font-family: "Source Sans Pro", Helvetica Neue, Helvetica, sans-serif;
   color: #f0f0f0;
@@ -80,18 +145,18 @@ section:last-of-type, .storify-container:last-of-type, figure:last-of-type {
   text-shadow: none;
 }
 
-/* line 91, ../sass/screen.sass */
+/* line 92, ../sass/screen.sass */
 .storify-container {
   background: #d18fad;
   padding: 10px;
   border-radius: 10px;
   border: 1px solid #e0b3c7;
   box-shadow: 0 -1 0 grey;
-  height: 300px;
+  height: 500px;
   overflow-y: scroll;
 }
 
-/* line 102, ../sass/screen.sass */
+/* line 103, ../sass/screen.sass */
 .storify-collapser {
   position: relative;
   bottom: 0;
@@ -106,7 +171,7 @@ section:last-of-type, .storify-container:last-of-type, figure:last-of-type {
   text-align: center;
 }
 
-/* line 118, ../sass/screen.sass */
+/* line 119, ../sass/screen.sass */
 h1 {
   font-weight: 300;
   font-family: "Roboto Slab", Helvetica Neue, Helvetica, sans-serif;
@@ -117,13 +182,13 @@ h1 {
   text-shadow: 0 -1px 0 white;
   font-size: 24px;
 }
-/* line 128, ../sass/screen.sass */
+/* line 129, ../sass/screen.sass */
 h1 small {
   font-size: 16px;
   font-style: italic;
 }
 
-/* line 132, ../sass/screen.sass */
+/* line 133, ../sass/screen.sass */
 h2 {
   font-weight: bold;
   font-family: "Source Sans Pro", Helvetica Neue, Helvetica, sans-serif;
@@ -134,7 +199,7 @@ h2 {
   color: #f0f0f0;
 }
 
-/* line 140, ../sass/screen.sass */
+/* line 141, ../sass/screen.sass */
 h3 {
   font-weight: bold;
   font-family: "Source Sans Pro", Helvetica Neue, Helvetica, sans-serif;
@@ -147,7 +212,7 @@ h3 {
   font-family: "Roboto Slab", Helvetica Neue, Helvetica, sans-serif;
 }
 
-/* line 151, ../sass/screen.sass */
+/* line 152, ../sass/screen.sass */
 h4 {
   font-weight: bold;
   margin-top: 0.5em;
@@ -156,26 +221,25 @@ h4 {
   color: #f0f0f0;
 }
 
-/* line 157, ../sass/screen.sass */
+/* line 158, ../sass/screen.sass */
 p {
   font-size: 1.1em;
   line-height: 1.5em;
   color: #8d8d8d;
 }
 
-/* line 161, ../sass/screen.sass */
+/* line 162, ../sass/screen.sass */
 ul {
   width: 100%;
 }
 
-/* line 163, ../sass/screen.sass */
+/* line 164, ../sass/screen.sass */
 li.case-icon {
+  list-style-type: none;
   margin-bottom: 1em;
   font-weight: bold;
   font-size: 1.4em;
-  color: #f0f0f0;
-  display: inline-block;
-  width: 47.5%;
+  color: #5a5a5a;
   vertical-align: top;
 }
 /* line 171, ../sass/screen.sass */

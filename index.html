@@ -44,13 +44,12 @@
     </section>
     <section class="storify-menu">
       <ul>
-        <li id="texas-deaf" class="active-storify case-icon" data-storify="/storify.com/TxDisabilities/texas-medicaid-matters-march-and-rally-march-5-201.js"><figure><img src="http://placehold.it/200x200" alt="case study icon" class="case-icon"></figure><figcaption>Texas School for the Deaf</figcaption></li>
-        <li id="texas-disabilites" class="case-icon" data-storify="//storify.com/TxDisabilities/texas-medicaid-matters-march-and-rally-march-5-201.js"><figure><img src="http://placehold.it/200x200" alt="case study icon" class="case-icon"></figure><figcaption>Coalition of Texans with Disabilites</figcaption></li>
+        <li id="texas-deaf" class="active-storify case-icon" data-storify="//storify.com/TxDisabilities/texas-medicaid-matters-march-and-rally-march-5-201.js"><figure></figure><figcaption>Texas School for the Deaf</figcaption></li>
+        <li id="texas-disabilites" class="case-icon" data-storify="//storify.com/TxDisabilities/texas-medicaid-matters-march-and-rally-march-5-201.js"><figure></figure><figcaption>Coalition of Texans with Disabilites</figcaption></li>
       </ul>
     </section>
     <section id="texas-deaf-storify" class="storify-container"><script src="//storify.com/TxDisabilities/texas-medicaid-matters-march-and-rally-march-5-201.js"></script><noscript>[<a href="//storify.com/TxDisabilities/texas-medicaid-matters-march-and-rally-march-5-201" target="_blank">View the story "Texas Medicaid Matters march and rally (March 5, 2013)" on Storify</a>]</noscript>
     </section>
-
 
     <section id="texas-disabilites-storify" class="hidden"><script src="//storify.com/TxDisabilities/texas-medicaid-matters-march-and-rally-march-5-201.js"></script><noscript>[<a href="//storify.com/TxDisabilities/texas-medicaid-matters-march-and-rally-march-5-201" target="_blank">View the story "Texas Medicaid Matters march and rally (March 5, 2013)" on Storify</a>]</noscript>
     </section>
@@ -171,6 +170,12 @@
     $('#modal').click(function(){
       console.log('clicked');
       $(this).hide();
+    });
+
+    $('.case-icon').click(function(){
+        var storifyURL = $(this).attr('data-storify');
+        console.log(storifyURL);
+        $('.storify-container').find('script').attr('src', storifyURL);
     });
   </script>
 </body>

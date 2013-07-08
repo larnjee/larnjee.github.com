@@ -10,6 +10,7 @@ $photography: desaturate(adjust-hue($larn, 90deg),30%)
 $design: desaturate(adjust-hue($larn, 180deg), 30%)
 $social-media: desaturate(adjust-hue($larn, 270deg),30%)
 
+@import "compass/reset"
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Roboto+Slab:300+700)
 
 body
@@ -95,7 +96,7 @@ section
   border: 1px solid lighten($social-media, 20%)
   box-shadow: 0 -1 0 grey
   @extend section
-  height: 300px
+  height: 500px
 
   overflow-y: scroll
 
@@ -161,12 +162,11 @@ p
 ul
   width: 100%
 li.case-icon
+  list-style-type: none
   margin-bottom: 1em
   font-weight: bold
   font-size: 1.4em
-  color: $offwhite
-  display: inline-block
-  width: 47.5%
+  color: $black
   vertical-align: top
   &:nth-of-type(even)
     margin-left: 2.5%
