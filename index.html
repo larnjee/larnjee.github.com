@@ -1,13 +1,177 @@
----
-layout: default
-title: Your New Jekyll Site
----
-
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+<!DOCTYPE html>
+<html>
+<head>
+<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+</head>
+<body>
+<header>
+  <div id="larnjee"><img src="larnjee.png" alt="larnjee logo"></div>
+  <h1>Designer /// Photographer /// Communicator</br><small>Holds a BFA in Communication Design. Makes a mean bowl of guacamole.</small></h1>
+</header>
+<div id="modal">
+  <article>
+    <figure><img src="" alt="enlarged"></figure>
+    <figcaption>
+      <h1>Maecenas faucibus mollis interdum.</h1>
+      <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p></figcaption>
+  </article>
 </div>
+  <article id="main">
+    <section id="PR-intro" class="third ">
+      <img  class="skill-icon" src="social.png" alt="photo-icon">
+      <h3> Social Media and PR</h3>
+      <p>My native language is digital, and I see opportunity in 140 characters or less. Building and maintaining cohesive social media strategy for my clients is...</p></section>
+    <section class="third ">
+      <img  class="skill-icon" src="design.png" alt="pr-icon">
+      <h3>Design</h3>
+      <p>Design is everywhere, whether we like it or not. My job is to make information accessible to the right audience, compelling, and beautiful.</p></section>
+    <section class="third ">
+      <img class="skill-icon" src="photo.png" alt="design-icon">
+      <h3>Photography</h3>
+      <p>Trained in traditional techniques, I have applied these practices to my more than 3 years of digital work, which consists of events, portraits, weddings, and fine art.</p></section>
+  </article>
+  <article id="social-media" class="colored">
+    <h2>Social Media &amp; PR</h2>
+      <section class="third section-icon">
+      <img src="social_white.png" alt="social white">
+    </section>
+    <section id="PR-content-1" class="third">
+      <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+    </section>
+    <section id="PR-content-2" class="third">
+       <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+    </section>
+    <section class="storify-menu">
+      <ul>
+        <li id="texas-deaf" class="active-storify case-icon" data-storify="/storify.com/TxDisabilities/texas-medicaid-matters-march-and-rally-march-5-201.js"><figure><img src="http://placehold.it/200x200" alt="case study icon" class="case-icon"></figure><figcaption>Texas School for the Deaf</figcaption></li>
+        <li id="texas-disabilites" class="case-icon" data-storify="//storify.com/TxDisabilities/texas-medicaid-matters-march-and-rally-march-5-201.js"><figure><img src="http://placehold.it/200x200" alt="case study icon" class="case-icon"></figure><figcaption>Coalition of Texans with Disabilites</figcaption></li>
+      </ul>
+    </section>
+    <section id="texas-deaf-storify" class="storify-container"><script src="//storify.com/TxDisabilities/texas-medicaid-matters-march-and-rally-march-5-201.js"></script><noscript>[<a href="//storify.com/TxDisabilities/texas-medicaid-matters-march-and-rally-march-5-201" target="_blank">View the story "Texas Medicaid Matters march and rally (March 5, 2013)" on Storify</a>]</noscript>
+    </section>
+
+
+    <section id="texas-disabilites-storify" class="hidden"><script src="//storify.com/TxDisabilities/texas-medicaid-matters-march-and-rally-march-5-201.js"></script><noscript>[<a href="//storify.com/TxDisabilities/texas-medicaid-matters-march-and-rally-march-5-201" target="_blank">View the story "Texas Medicaid Matters march and rally (March 5, 2013)" on Storify</a>]</noscript>
+    </section>
+
+  </article>
+  <article id="design" class="colored">
+    <h2>Design</h2>
+    <section class="third section-icon">
+      <img src="design_white.png" alt="design white">
+    </section>
+    <section id="design-content-1" class="third">
+      <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+    </section>
+    <section id="design-content-2" class="third">
+       <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+    </section>
+    <figure class="quarter modal-launch design"><img src="img/Dozens_logo_thumb.png" alt="example work">
+      <figcaption><h4>Dozen's</h4><p>Restaurant Rebrand</p></figcaption>
+    </figure>
+    <figure class="quarter modal-launch design"><img src="img/sanfran_logo_thumb.png" alt="example work">
+      <figcaption><h4>San Francisco Lighting Co.</h4><p>Retail store branding, web, and collateral.</p></figcaption>
+
+    </figure>
+    <figure class="quarter modal-launch design"><img src="img/ter_thumb.png" alt="example work">
+            <figcaption><h4>Terlingua Chili Cook-Off</h4><p>Event rebrand and interactive marketing plan.</p></figcaption>
+
+    </figure>
+    <figure class="quarter modal-launch design"><img src="http://placehold.it/500x500" alt="example work">
+      <figcaption><h4>Tara &amp; Greg</h4><p>Expressive Typography Book</p></figcaption>
+    </figure>
+    <figure class="quarter modal-launch design"><img src="http://placehold.it/500x500" alt="example work">
+      <figcaption><h4>My Medicaid Matters</h4><p>Advocacy rally logo and collateral.</p></figcaption>
+    </figure>
+    <figure class="quarter modal-launch design"><img src="http://placehold.it/500x500" alt="example work">
+      <figcaption><h4>Spooky Skedaddle</h4><p>Website</p></figcaption>
+  </article>
+  <article id="photography" class="colored">
+    <h2>Photography</h2>
+        <section class="third section-icon">
+      <img src="photo_white.png" alt="photo white">
+    </section>
+    <section id="photo-content-1" class="third">
+      <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+    </section>
+    <section id="photo-content-2" class="third">
+       <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+    </section>
+    <figure class="quarter modal-launch photo"><img src="http://placehold.it/500x500" alt="example work">
+      <figcaption><h4>Project Name</h4><p>Description would go here.</p></figcaption>
+    </figure>
+    <figure class="quarter modal-launch photo"><img src="http://placehold.it/500x500" alt="example work">
+      <figcaption><h4>Project Name</h4><p>Description would go here.</p></figcaption>
+
+    </figure>
+    <figure class="quarter modal-launch photo"><img src="http://placehold.it/500x500" alt="example work">
+            <figcaption><h4>Project Name</h4><p>Description would go here.</p></figcaption>
+
+    </figure>
+    <figure class="quarter modal-launch photo"><img src="http://placehold.it/500x500" alt="example work">
+      <figcaption><h4>Project Name</h4><p>Description would go here.</p></figcaption>
+    </figure>
+    <figure class="quarter modal-launch photo"><img src="http://placehold.it/500x500" alt="example work">
+      <figcaption><h4>Project Name</h4><p>Description would go here.</p></figcaption>
+    </figure>
+    <figure class="quarter modal-launch photo"><img src="http://placehold.it/500x500" alt="example work">
+      <figcaption><h4>Project Name</h4><p>Description would go here.</p></figcaption>
+
+    </figure>
+    <figure class="quarter modal-launch photo"><img src="http://placehold.it/500x500" alt="example work">
+            <figcaption><h4>Project Name</h4><p>Description would go here.</p></figcaption>
+
+    </figure>
+    <figure class="quarter modal-launch photo"><img src="http://placehold.it/500x500" alt="example work">
+      <figcaption><h4>Project Name</h4><p>Description would go here.</p></figcaption>
+    </figure>
+  </article>
+  <article id="contact" class="colored">
+    <h2>Lauren Gunter</h2>
+  </article>
+  <script>
+    $('.modal-launch').click(function(){
+        console.log('modal launch');
+        $('#modal').show();
+        var projectName = $(this).find('h4').text();
+        var projectDesc = $(this).find('p').text();
+        var projectThumb = $(this).find('img').attr('src');
+
+        console.log(projectName + " " + projectDesc + " " + projectThumb);
+
+        $("#modal").find('h1').text(projectName);
+        $("#modal").find('p').text(projectDesc);
+
+        //would be yadayada_thumb.jpg
+        //remove last 10char
+        //add .jpg
+        //projectThumb = "http://placehold.it/500x500_thumb.jpg";
+        
+        projectThumb = projectThumb.replace("_thumb.jpg", ".jpg");
+
+        $("#modal").find('img').attr("src", projectThumb);
+
+    });
+    $('.storify-menu li').click(function(){
+    
+        if($(this).hasClass('active-storify')){
+          //$(this).removeClass('active-storify');
+        }
+        else{
+          $('.storify-menu').find('.active-storify').removeClass('active-storify');
+          $(this).addClass('active-storify');
+          var storyname = $(this).attr('ID');
+          console.log(storyname);
+          $(storyname + "-storify").show();
+        }
+    });
+
+    //exit modal
+    $('#modal').click(function(){
+      console.log('clicked');
+      $(this).hide();
+    });
+  </script>
+</body>
+</html>
