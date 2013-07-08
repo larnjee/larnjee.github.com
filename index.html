@@ -44,14 +44,18 @@
     </section>
     <section class="storify-menu">
       <ul>
-        <li id="texas-deaf" class="active-storify case-icon" data-storify="//storify.com/TxDisabilities/texas-medicaid-matters-march-and-rally-march-5-201.js"><figure></figure><figcaption>Texas School for the Deaf</figcaption></li>
-        <li id="texas-disabilites" class="case-icon" data-storify="//storify.com/TxDisabilities/texas-medicaid-matters-march-and-rally-march-5-201.js"><figure></figure><figcaption>Coalition of Texans with Disabilites</figcaption></li>
+        <li id="texas-deaf" class="active-storify case-icon">Texas School for the Deaf</li>
+        <li id="texas-disabilites" class="case-icon">Coalition of Texans with Disabilites</li>
       </ul>
     </section>
-    <section id="texas-deaf-storify" class="storify-container"><script src="//storify.com/TxDisabilities/texas-medicaid-matters-march-and-rally-march-5-201.js"></script><noscript>[<a href="//storify.com/TxDisabilities/texas-medicaid-matters-march-and-rally-march-5-201" target="_blank">View the story "Texas Medicaid Matters march and rally (March 5, 2013)" on Storify</a>]</noscript>
+
+
+    <section id="texas-disabilites-storify" class="storify-container hidden">
+      <script id="storify" src="//storify.com/TxDisabilities/texas-medicaid-matters-march-and-rally-march-5-201.js"></script>
     </section>
 
-    <section id="texas-disabilites-storify" class="hidden"><script src="//storify.com/TxDisabilities/texas-medicaid-matters-march-and-rally-march-5-201.js"></script><noscript>[<a href="//storify.com/TxDisabilities/texas-medicaid-matters-march-and-rally-march-5-201" target="_blank">View the story "Texas Medicaid Matters march and rally (March 5, 2013)" on Storify</a>]</noscript>
+    <section id="texas-deaf-storify" class="storify-container">
+      <script id="storify" src="//storify.com/_LanguageForAll/spooky-skedaddle-5k-and-festival.js"></script>
     </section>
 
   </article>
@@ -158,11 +162,13 @@
           //$(this).removeClass('active-storify');
         }
         else{
+          var sucks = $('.active-storify').attr('ID');
           $('.storify-menu').find('.active-storify').removeClass('active-storify');
           $(this).addClass('active-storify');
           var storyname = $(this).attr('ID');
           console.log(storyname);
-          $(storyname + "-storify").show();
+          $("#" + sucks + "-storify").hide();
+          $("#" + storyname + "-storify").show();
         }
     });
 
@@ -172,11 +178,7 @@
       $(this).hide();
     });
 
-    $('.case-icon').click(function(){
-        var storifyURL = $(this).attr('data-storify');
-        console.log(storifyURL);
-        $('.storify-container').find('script').attr('src', storifyURL);
-    });
+
   </script>
 </body>
 </html>
